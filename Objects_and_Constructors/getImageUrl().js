@@ -13,5 +13,6 @@ Card.prototype.getImageURL = function () {
 }
 
 
+var myCard = new Card(2, 'diamonds');
 
 console.log(myCard.getImageURL());
