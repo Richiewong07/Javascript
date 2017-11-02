@@ -13,14 +13,11 @@ var urls = [
 
 function saveWebPage(url, filename) {
   rp(url)
-    .then(function (response) {
-      console.log(response);
-      return response;
-    })
     .then(function(response) {
-      var p = fs.writeFile('./testing/' + filename + '.html', response);
-      console.log('Webpage is saved!');
-      return p;
+      fs.writeFile('./testing/' + filename + '.html', response)
+      .then(function (response) {
+        console.log('Webpage is saved!')
+      })
     })
     .catch(function (error) {
       console.log('You received an error!');
