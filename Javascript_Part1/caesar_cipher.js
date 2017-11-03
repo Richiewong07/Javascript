@@ -1,4 +1,4 @@
-function caesar(string, offset) {
+Cfunction caesar(string, offset) {
   let cipher = [];
   for (i = 0; i < string.length; i++) {
     char = string[i];
