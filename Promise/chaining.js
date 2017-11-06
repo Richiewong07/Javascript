@@ -11,10 +11,12 @@ var urls = [
   'https://en.wikipedia.org/wiki/Google_Chrome'
 ];
 
+var filename = 'chaining.txt';
+
 function saveWebPage(url, filename) {
   rp(url)
     .then(function(response) {
-      fs.writeFile('./testing/' + filename + '.html', response)
+      return fs.outputFile('./Javascript/Promise/' + filename, response)
       .then(function (response) {
         console.log('Webpage is saved!')
       })
@@ -24,4 +26,4 @@ function saveWebPage(url, filename) {
     })
 }
 
-saveWebPage(urls[0], 'saveWebPage');
+saveWebPage(urls[0], filename);
