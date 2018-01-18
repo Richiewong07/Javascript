@@ -11,5 +11,3 @@ function madlib (name, subject) {
   console.log(output);
   return output;
 }
-
-madlib('Richie', 'math')
