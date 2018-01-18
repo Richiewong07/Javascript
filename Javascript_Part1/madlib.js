@@ -9,5 +9,7 @@
 function madlib (name, subject) {
   var output = name + "'s favorite subject in school is " + subject + "!";
   console.log(output);
-  return output;
+  // return output;
 }
+
+madlib('Richie', 'math') // runs function
