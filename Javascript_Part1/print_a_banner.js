@@ -7,9 +7,9 @@
 
 
 function printBanner (text) {
-  var stars = "*".repeat(text.length + 2)
-  var middleRow = ("*" + text + '*\n');
-  var fullBox = stars + '\n' + middleRow + stars;
+  var stars = '*'.repeat(text.length + 4)
+  var middleRow = ('* ' + text + ' *');
+  var fullBox = stars + '\n' + middleRow + '\n' + stars;
   console.log(fullBox);
 }
 
