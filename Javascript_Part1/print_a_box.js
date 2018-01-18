@@ -7,12 +7,23 @@
     // ******
 
 
+// function printBox(width, height) {
+//   var stars = "*".repeat(width)
+//   var middleRow = ("*" + " ".repeat(width - 2) + '*\n').repeat(height-2);
+//   var fullBox = stars + '\n' + middleRow + stars;
+//
+//   console.log(fullBox);
+// }
+//
+// printBox(6, 4)
+
+
 function printBox(width, height) {
-  var stars = "*".repeat(width)
-  var middleRow = ("*" + " ".repeat(width - 2) + '*\n').repeat(height-2);
-  var fullBox = stars + '\n' + middleRow + stars;
+  var fullRow = "*".repeat(width)
+  var middleRow = ("*" + " ".repeat(width-2) + "*")
+  var fullBox = fullRow + '\n' + middleRow + '\n' + middleRow + '\n' + fullRow
 
   console.log(fullBox);
 }
 
-printBox(6, 4)
+printBox(6,4)
