@@ -13,6 +13,7 @@ function longLongVowels (string) {
   let output = [];
   for (i = 0; i < string.length; i++) {
     let char = string[i]
+    // console.log(char)
     if (vowels.indexOf(char.toLowerCase()) != -1) {
       if (string[i].toLowerCase() === string[i + 1].toLowerCase()) {
         output.push(char.repeat(3));
