@@ -21,4 +21,4 @@ function positiveNumber(input) {
 
 array = [-3, -2, -1, 0, 1, 2, 3]
 
-console.log(positiveNumber(array))
+// console.log(positiveNumber(array))
